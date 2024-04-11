@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p{
+        /* p{
             width: 250px;
             font-size: 34px;
             margin: 0 auto; 
-        }
+        } */
         
     </style>
 </head>
 <body>
+    <h1>
+       Content 
+    </h1>
+    <img src="img/vector(1).png" width="150" height="150" alt="logo mantra">
+    <img src="vector(1)copy.png" alt="logo mantracopy">
     <p id="top">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error ea saepe beatae alias minus atque iure neque aliquam harum dolore fuga perferendis soluta nemo veniam, cum quas sunt voluptatum.
     </p>
@@ -35,9 +40,103 @@
             <a href="mailto:kurslaya.elena@gmail.com">Contakt E-Mail</a>
             <br>
             <a href="#top">Top</a>
+            <br>
             <a href="#secondParagraf">Second Paragraf</a>
         </p>
  
     </nav>
+    <section>
+        <table border="4" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>
+                        Name
+                    </th>
+                    <th colspan="2">
+                        Age
+                    
+                        Skills
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tom</td>
+                    <td>20</td>
+                    <td rowspan="2">html, css, adobe photoshop</td>
+                </tr>
+                <tr>
+                    <td>Anna</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>Bob</td>
+                    <td>24</td>
+                    <td>Java, figma</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </section>
+    <form action="">
+        <div>
+            <label for="username">user name</label>
+            <input placeholder="Type user name" id="username" type="text">
+        </div>
+        <br>
+        <div>
+            <label for="usernamepassword">user password</label>
+            <input placeholder="Type min 6 characters passwort" id="usernamepassword" type="password">
+        </div>
+        <br>
+        <div>
+            <label for="usersecondname">user secondname</label>
+            <input disabled placeholder="Type user secondname" id="usersecondname" type="text">
+        </div>
+        <br>
+        <textarea name="message" id="massage" cols="100" placeholder="Type your message" rows="10"></textarea>
+        <br>
+        <select name="Skills" id="Skills">
+        <option value="01">first skills html</option>
+        <option disabled value="02">second skills css</option>
+        <option value="03"> skills figma</option>
+        </select>
+        <div>
+            <h3>
+                Delivery
+            </h3>
+            <div>
+                <label for="post">ukr post</label>
+                <input id="post" name="delivery" type="radio">
+            </div>
+            <br>
+            <div>
+                <label for="self">self delivery</label>
+                <input id="self" name="delivery" type="radio">
+        </div>
+        <br>
+        <div>
+            <label for="postman">delivery postman</label>
+            <input id="postman" name="delivery" type="radio">
+        </div>
+        <h3>
+            User hobbys
+        </h3>
+        <div>
+            <label for="sport">Sport</label>
+            <input id="sport" type="checkbox">
+        </div>
+        <br>
+        <div>
+            <label for="musik">Musik</label>
+            <input id="musik" type="checkbox">
+    </div>
+    <br>
+    <div>
+        <label for="read">Read</label>
+        <input id="read" type="checkbox">
+    </div>
+
+    </form>
 </body>
 </html>
